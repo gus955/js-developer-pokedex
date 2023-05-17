@@ -11,6 +11,15 @@ function convertPokemonToLi(pokemon) {
             <span class="name">${pokemon.name}</span>
             <span class="weight">${pokemon.weight}kg</span>
 
+            <div class='stats'>
+
+            <ol class="stat">
+            ${pokemon.stats}
+            
+            </ol>
+
+            </div>
+
             <div class="detail">
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
